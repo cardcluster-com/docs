@@ -18,6 +18,40 @@
             "pages": [
               "index"
             ]
+          },
+          {
+            "group": "Collection Manager",
+            "pages": [
+              "collection-manager/card-prices"
+            ]
+          },
+          {
+            "group": "Deck Builder",
+            "pages": [
+              "deck-builder/publish-decks"
+            ]
+          },
+          {
+            "group": "Card Database",
+            "pages": [
+              "card-database/effect-highlighting",
+              "card-database/card-scans",
+              "card-database/themes"
+            ]
+          },
+          {
+            "group": "Community",
+            "pages": [
+              "community/community-guidelines"
+            ]
+          },
+          {
+            "group": "cardcluster Pro",
+            "pages": [
+              "cardcluster-pro/pro-tag",
+              "cardcluster-pro/available-countries",
+              "cardcluster-pro/cancel"
+            ]
           }
         ],
         "global": {
@@ -47,6 +81,40 @@
             "group": "Erste Schritte",
             "pages": [
               "de/index"
+            ]
+          },
+          {
+            "group": "Collection Manager",
+            "pages": [
+              "de/collection-manager/card-prices"
+            ]
+          },
+          {
+            "group": "Deck Builder",
+            "pages": [
+              "de/deck-builder/publish-decks"
+            ]
+          },
+          {
+            "group": "Kartendatenbank",
+            "pages": [
+              "de/card-database/effect-highlighting",
+              "de/card-database/card-scans",
+              "de/card-database/themes"
+            ]
+          },
+          {
+            "group": "Community",
+            "pages": [
+              "de/community/community-guidelines"
+            ]
+          },
+          {
+            "group": "cardcluster Pro",
+            "pages": [
+              "de/cardcluster-pro/pro-tag",
+              "de/cardcluster-pro/available-countries",
+              "de/cardcluster-pro/cancel"
             ]
           }
         ],

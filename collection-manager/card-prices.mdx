@@ -1,0 +1,67 @@
+---
+title: Card Prices
+description: "On cardcluster, you can access a range of price data from Cardmarket and TCGplayer."
+---
+
+<Warning>
+This data refers to cards in **Near Mint** condition. It is not possible to further filter the displayed price based on language, edition, or condition.
+Please go directly to our partner to check current offers.
+</Warning>
+
+## Available data
+
+**Cardmarket** (Euro):
+- Default: The default price shows the AVG7 value and falls back to Low if there were no sales.
+- AVG: The average selling price
+- Low: The cheapest offer available
+- Trend: The trend price as displayed on Cardmarket
+- AVG1: Average selling price on the last day
+- AVG7: Average selling price over the last 7 days
+- AVG30: Average selling price over the last 30 days
+
+**TCGplayer** (US dollar):
+- Default: The default price shows the market value and falls back to Low if there were no sales.
+- Low: The cheapest offer available
+- Mid: The average available offer
+- High: The most expensive offer available
+- Market: Current market value according to TCGplayer based on current sales
+- Direct Low: The cheapest offer available among all “TCGplayer Direct” sellers
+
+<Info>
+We have been collecting price data since **September 26, 2023**.
+For TCGplayer, the Mid, High, and Direct Low data will only be available from June 3, 2025.
+</Info>
+
+## Set displayed price
+
+**Price data in the card database and Deck Builder**
+
+You can change the prices displayed to the right of the search field or at the top of the menu (mobile).
+
+**Price data of collections**
+
+You can set which price data should be used for each collection and wants list individually.
+This is important because the total value and price shift are determined based on this setting.
+
+To do this, open a collection and click on “Edit.” Select the data you want in the “Card prices” field.
+
+**Graph settings**
+
+You can display up to 4 price graphs in the graph on the card page and in the collection. To do this, hover over the price
+in the top left corner and check the desired data.
+
+## How is the default value calculated?
+
+We use the **average sales price over the last 7 days** (Cardmarket) or TCGplayer's market value. If there were no sales within this timeframe, we use the price of the **cheapest available offer**.
+
+Sometimes, spikes in prices can occur after a sale, when someone buys a card for a significantly higher price. This happens especially
+with old cards that are only rarely sold. There are not enough sales to balance the average price with the cheapest offer. To prevent
+"false" prices from being displayed on cardcluster, we calculate the ratio between the average sales price and the cheapest available offer.
+If this ratio is too high, we **also use the cheapest offer** as the price.
+
+## Why are condition, language, and edition not taken into account in the prices?
+
+We only provide you with the data that our partners offer.
+
+It is practically impossible to guarantee 100% accuracy of all card prices, as cards are constantly being sold and
+new offers are being added. For purely technical reasons, we are unable to refresh this data at all times.

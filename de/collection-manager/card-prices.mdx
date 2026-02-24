@@ -1,0 +1,69 @@
+---
+title: Karten-Preise
+description: "Auf cardcluster kannst du auf eine Reihe von Preisdaten von Cardmarket und TCGplayer zugreifen."
+---
+
+<Warning>
+Diese Daten beziehen sich auf Karten in **Near Mint**. Es ist nicht möglich, den angezeigten Preis basierend auf Sprache, Auflage oder Zustand
+weiter einzuschränken. Gehe dafür bitte direkt zu unserem Partner, um aktuelle Angebote zu prüfen.
+</Warning>
+
+## Verfügbare Daten
+
+**Cardmarket** (Euro):
+- Default: Der Default-Preis zeigt den AVG7-Wert und fällt auf Low zurück, falls es keine Verkäufe gab.
+- AVG: Der durchschnittliche Verkaufspreis
+- Low: Das günstigste verfügbare Angebot
+- Trend: Der Trend-Preis wie er bei Cardmarket angezeigt wird
+- AVG1: Durchschnittlicher Verkaufspreis des letzten Tages
+- AVG7: Durchschnittlicher Verkaufspreis der letzten 7 Tage
+- AVG30: Durchschnittlicher Verkaufspreis der letzten 30 Tage
+
+**TCGplayer** (US-Dollar):
+- Default: Der Default-Preis zeigt den Market-Wert und fällt auf Low zurück, falls es keine Verkäufe gab.
+- Low: Das günstigste verfügbare Angebot
+- Mid: Das durchschnittliche verfügbare Angebot
+- High: Das teuerste verfügbare Angebot
+- Market: Aktueller Marktwert laut TCGplayer basierend auf aktuellen Verkäufen
+- Direct Low: Das günstigste verfügbare Angebot unter allen "TCGplayer Direct"-Verkäufern
+
+<Info>
+Wir sammeln Preisdaten seit dem **26.09.2023**. Bei TCGplayer stehen die Daten Mid, High und Direct Low erst ab
+dem 3.6.2025 zur Verfügung.
+</Info>
+
+## Angezeigten Preis einstellen
+
+**Preisdaten in der Kartendatenbank und im Deck Builder**
+
+Die angezeigten Preise kannst du rechts neben dem Suchfeld oder oben im Menü (mobile) ändern.
+
+**Preisdaten von Sammlungen**
+
+Du kannst für jede Sammlung und Wants-Liste einzeln einstellen, welche Preisdaten verwendet werden sollen.
+Dies ist wichtig, weil basierend auf dieser Einstellung der Gesamtwert und die Wertänderung bestimmt wird.
+
+Öffne dazu eine Sammlung und klicke auf `Bearbeiten`. Wähle im Feld Kartenpreise die gewünschten Daten aus.
+
+**Graph-Einstellungen**
+
+Im Graphen auf der Karten-Seite und in der Sammlung kannst du dir bis zu 4 Preisgraphen anzeigen lassen. Hover dafür über den Preis
+oben links und setze ein Häckchen bei den gewünschten Daten.
+
+## Wie wird der Default-Wert berechnet?
+
+Wir verwenden den **durchschnittlichen Verkaufspreis der letzten 7 Tage** (Cardmarket) bzw. den von TCGplayer berechneten Market-Wert. Falls es in dem Zeitraum keine Verkäufe gab,
+ nehmen wir den Preis des **günstigsten verfügbaren Angebots**.
+
+Manchmal können bei Preisen starke Spikes nach oben auftreten, wenn jemand die Karte zu einem deutlich höheren Preis kauft.
+Das passiert insbesondere bei alten Karten, die nur noch selten verkauft werden. Dort gibt es nicht mehr ausreichend Verkäufe, um dies mit dem Durchschnittspreis
+auszugleichen. Damit keine „falschen“ Preise bei cardcluster angezeigt werden, berechnen wir das Verhältnis zwischen dem
+durchschnittlichen Verkaufspreis und dem Preis des günstigsten verfügbaren Angebots. Wenn dieser Verhältnis unverhältnismäßig hoch ist,
+verwenden wir **ebenfalls das günstigste Angebot** als Preis.
+
+## Warum werden Zustand, Sprache und Auflage bei den Preisen nicht berücksichtigt?
+
+Wir stellen euch bloß die Daten zur Verfügung, die unsere Partner anbieten.
+
+Eine 100%-tige Genauigkeit der Preise aller Karten ist praktisch unmöglich, weil ständig Karten verkauft und
+neue Angebote eingestellt werden. Schon aus rein technischen Gründen können wir diese Daten nicht zu jedem Zeitpunkt neu abgefragen.
