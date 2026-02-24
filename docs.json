@@ -1,104 +1,104 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "cardcluster Help Center",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#3A86FF",
+    "light": "#3A86FF",
+    "dark": "#3A86FF"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Help Center",
         "groups": [
           {
             "group": "Getting started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "index"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Changelog",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Changelog",
             "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "changelog"
             ]
           }
         ]
       }
     ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+    "languages": [
+      {
+        "language": "en",
+        "groups": [
+          {
+            "group": "Getting started",
+            "pages": [
+              "index"
+            ]
+          }
+        ],
+        "global": {
+          "anchors": [
+            {
+              "anchor": "Help Center",
+              "href": "/",
+              "icon": "book-open-cover"
+            },
+            {
+              "anchor": "Changelog",
+              "href": "/changelog",
+              "icon": "calendar"
+            },
+            {
+              "anchor": "System status",
+              "href": "https://status.cardcluster.com",
+              "icon": "wave-pulse"
+            }
+          ]
         }
-      ]
-    }
+      },
+      {
+        "language": "de",
+        "groups": [
+          {
+            "group": "Erste Schritte",
+            "pages": [
+              "de/index"
+            ]
+          }
+        ],
+        "global": {
+          "anchors": [
+            {
+              "anchor": "Hilfe-Center",
+              "href": "/de",
+              "icon": "book-open-cover"
+            },
+            {
+              "anchor": "Changelog",
+              "href": "/de/changelog",
+              "icon": "calendar"
+            },
+            {
+              "anchor": "System-Status",
+              "href": "https://status.cardcluster.com",
+              "icon": "wave-pulse"
+            }
+          ]
+        }
+      }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    "light": "/logo/logo-light.svg",
+    "dark": "/logo/logo-dark.svg"
   },
   "contextual": {
     "options": [
@@ -112,11 +112,60 @@
      "vscode"
    ]
   },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "https://cardcluster.com/support"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "cardcluster",
+      "href": "https://cardcluster.com"
+    }
+  },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+      "instagram": "https://www.instagram.com/cardcluster",
+      "facebook": "https://facebook.com/cardcluster",
+      "x": "https://x.com/cardcluster",
+      "threads": "https://threads.com/@cardcluster",
+      "bluesky": "https://bsky.app/profile/cardcluster.bsky.social",
+      "reddit": "https://www.reddit.com/r/cardcluster",
+      "discord": "https://discord.gg/Ymn6eWMA2S"
+    },
+    "links": [
+      {
+        "header": "Products",
+        "items": [
+          {
+            "label": "Collection Manager",
+            "href": "https://cardcluster.com/product/collection-manager"
+          },
+          {
+            "label": "cardcluster Pro",
+            "href": "https://cardcluster.com/pricing"
+          }
+        ]
+      },
+      {
+        "header": "Legal",
+        "items": [
+          {
+            "label": "Imprint",
+            "href": "https://cardcluster.com/legal"
+          },
+          {
+            "label": "Privacy Policy",
+            "href": "https://cardcluster.com/privacy"
+          },
+          {
+            "label": "Terms of Use",
+            "href": "https://cardcluster.com/terms"
+          }
+        ]
+      }
+    ]
   }
 }
